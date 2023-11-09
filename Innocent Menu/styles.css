@@ -1,0 +1,80 @@
+:root {
+  --light-red: #E03E52;
+  --dark-red: #9C2235;
+  --header-red: #B30838;
+  --cookie-red: #DB0C1D;
+  --white: #fff;
+  --off-white: #F8FAFB;
+  --black: #000;
+  --teal: #00A7B5;
+  --baby-pink: #F6B5BA;
+  --baby-blue: #71C5E9;
+  --blue-green: #279989;
+  --green: #00966C;
+  --orange-yellow: #FF9E1B;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  background-color: var(--header-red);
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.menu-item {
+  display: none;
+}
+
+.line {
+  border-bottom: 0.2rem solid var(--light-red);
+  width: 90vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#a-bit-about-us:checked ~ .menu-item {
+  display: initial;
+}
+
+#a-bit-about-us:checked .main-menu {
+  display: none;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  left: -100vw;
+}
+
+.menu-item ul li a:hover {
+  color: var(--light-red);
+}
+
+.menu-tab {
+  position: fixed;
+  top: 2;
+}
+
+.hamburger {
+  position: absolute;
+  top: 76rem;
+}
+
+#menu-tab:checked header {
+  transform: translateY(-90vh);
+}
+
+main {
+  height: 200vh;
+  background-color: var(--light-red);
+}/*# sourceMappingURL=styles.css.map */
